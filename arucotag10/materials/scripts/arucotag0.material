@@ -1,0 +1,13 @@
+material ArucoTag10/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/arucotag10.png
+      }
+    }
+  }
+}

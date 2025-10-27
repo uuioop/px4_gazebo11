@@ -1,0 +1,13 @@
+material License4/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/license_4.png
+      }
+    }
+  }
+}

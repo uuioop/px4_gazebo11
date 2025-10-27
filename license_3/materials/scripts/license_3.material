@@ -1,0 +1,13 @@
+material License3/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/license_3.png
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+material License2/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/license_2.png
+      }
+    }
+  }
+}
