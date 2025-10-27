@@ -16,6 +16,7 @@ PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/
 ```
 
 ### 文件说明
-- **models/**: 包含ArUco标记和门牌模型
+- **models/**: 包含ArUco标记,门牌以及无人机模型
+`无人机模型替换得看你选择自定义还是选择修改官方模型`
 
 - **worlds/**: 包含仿真世界配置文件
