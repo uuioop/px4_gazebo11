@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='my_stable_camera'>
+    <pose>0 0 0 0 0 0</pose>
+    <link name='link'>
+      <inertial><mass>0.015</mass><inertia><ixx>1e-5</ixx><iyy>1e-5</iyy><izz>1e-5</izz></inertia></inertial>
+      <visual name='visual'><geometry><box><size>0.01 0.01 0.01</size></box></geometry></visual>
+      <collision name='collision'><geometry><box><size>0.01 0.01 0.01</size></box></geometry></collision>
+      <sensor name='camera' type='camera'>
+        <camera>
+          <horizontal_fov>1.047</horizontal_fov>
+          <image><width>320</width><height>240</height></image>
+          <clip><near>0.1</near><far>100</far></clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <plugin name='camera_plugin' filename='libgazebo_ros_camera.so'>
+          <robotNamespace></robotNamespace>
+          <cameraName>usb_cam</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <!-- 这个 frameName 将是 Gazebo 发布的 TF 坐标系 -->
+          <frameName>camera_base_link</frameName>
+        </plugin>
+      </sensor>
+    </link>
+  </model>
+</sdf>
